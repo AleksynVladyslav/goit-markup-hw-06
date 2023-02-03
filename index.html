@@ -67,19 +67,74 @@
           <button class="hero-btn btn" data-modal-open type="button">
             Order Service
           </button>
-
+  
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <div class="wrapper">
-                <button class="icon-close" data-modal-close type="button">
-                  <svg width="8" height="8">
+              <div class="wrapper-close">
+                <button class="close-btn" data-modal-close type="button">
+                  <svg class="close-icon" width="8" height="8">
                     <use href="./images/svg-sprite.svg#close-black"></use>
                   </svg>
                 </button>
               </div>
+              <h2 class="modal-request">
+                Leave your contacts and we will call you back
+              </h2>
+              <form class="modal-form">
+                
+                <div class="form-group_contacts" role="group">
+                  <div class="form-field">
+                    <label class="modal-label" for="name">Name</label>
+                    <div class="wrapper">
+                      <input  class="modal-input" id="name" type="text" name="name" placeholder="Jeffrey Lebowski"  />
+                        <svg class="input-icon" width="18" height="24">
+                          <use href="./images/svg-sprite.svg#person-black"></use>
+                        </svg>
+                    </div>
+                  </div>
+    
+                  <div class="form-field">
+                    <label class="modal-label" for="phone">Phone</label>
+                    <div class="wrapper">
+                      <input class="modal-input" id="phone" type="tel" name="phone-number" placeholder="+380954768225"  />
+                        <svg class="input-icon" width="18" height="24">
+                          <use href="./images/svg-sprite.svg#phone-black"></use>
+                        </svg>
+                    </div>
+                  </div>
+    
+                  <div class="form-field">
+                    <label class="modal-label" for="email">Email</label>
+                    <div class="wrapper">
+                      <input class="modal-input" id="email" type="text" name="email" placeholder="my@gmail.com"  />
+                        <svg class="input-icon" width="18" height="24">
+                          <use href="./images/svg-sprite.svg#email-black"></use>
+                        </svg>
+                    </div>
+                  </div>
+    
+                  <div class="form-field">
+                    <label class="modal-label" for="comments">Comment</label>
+                    <textarea class="textarea" id="comments" name="comments" placeholder="Text input"></textarea>
+                  </div>
+                </div>
+  
+                <div class="form-field_checkbox">
+                  <label class="modal-label_checkbox">
+                    <input class="modal-input_checkbox visually-hidden" type="checkbox" name="terms and conditions">
+                    <span class="checkbox"></span>
+                    <span>I accept the terms and conditions of the <a class="link_checkbox" href="#">Privacy Policy</a></span>
+                  </label>
+                </div>
+  
+         <div class="btn-wrap">
+          <button class="modal-btn btn" type="submit">Send</button>
+            
+         </div>
+              </form>
             </div>
           </div>
-        </div>
+        
       </section>
 
       <section class="advantages section">
