@@ -219,7 +219,6 @@ ul {
 .hero-btn,
 .modal-btn {
   padding: 16px 32px;
-  border-radius: 4px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -367,7 +366,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: outline 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .modal-input::placeholder {
@@ -378,8 +377,8 @@ ul {
 }
 
 .modal-input:focus {
-  outline: 1px solid #4d5ae5;
-  border: none;
+  border: 1px solid #4d5ae5;
+  outline: none;
 }
 
 .input-icon {
@@ -404,7 +403,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: outline 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .textarea::placeholder {
@@ -414,8 +413,8 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 .textarea:focus {
-  outline: 1px solid #4d5ae5;
-  border: none;
+  border: 1px solid #4d5ae5;
+  outline: none;
 }
 
 .form-field_checkbox {
@@ -489,7 +488,7 @@ ul {
   text-align: center;
 
   background: #f4f4fd;
-  border-radius: 4px;
+  border-radius: 4spx;
 }
 
 .advantages-subtitle {
@@ -658,9 +657,11 @@ ul {
 }
 
 .social-wrapper {
+  margin-right: 80px;
 }
 
-.social-title {
+.social-title,
+.subscribe-title {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -690,6 +691,74 @@ ul {
 .social-wrapper .social-link:hover,
 .social-wrapper .social-link:focus {
   background-color: var(--green);
+}
+
+.subscribe-wrapper {
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+.subscribe-input {
+  display: inline-flex;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-right: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: var(--white);
+
+  transition: border 250ms var(--timing-function);
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border: 1px solid var(--white);
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--iris);
+  color: var(--white);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.subscribe-btn::after {
+  content: ' ';
+
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+
+  background-image: url(../images/paper-aeroplane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--ocean);
 }
 
 /* PORTFOLIO */
